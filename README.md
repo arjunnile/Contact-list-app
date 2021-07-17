@@ -51,3 +51,10 @@ yarn add @material-ui/core
 - Header.js component has used for header of app.
 - TableComponent.js component has used for grid of app.
 - AddContactModal.js component has used for add or edit contact details.
+
+###### Application handle instruction
+
+- Whenever start app on loading grid view (with First name, Last name, Email Id, Phone Number, Status Columns) there where display all available contacts.
+- 'Add Contact' button, Whenever user click on Add Contact button new contact form open with the all fields where user can add new contact.
+- 'Status' Column where user can active or inactive perticular contact.
+- Last column of table : Where edit contact icon and delete contact icon available, where user can edit contact as well delete contact from list.
