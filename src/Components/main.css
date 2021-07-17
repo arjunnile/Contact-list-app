@@ -1,0 +1,92 @@
+.contact-app .header-row {
+    background: #23bdc3;
+    padding: 15px;
+}
+
+.contact-app .header-row .logo-title {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+.contact-app .app-title-row {
+    margin-top: 20px;
+}
+
+.contact-app .app-title-row .title {
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    color: #23bdc3;
+}
+
+.contact-app .app-title-row .add-contact-button {
+    float: right;
+}
+
+.contact-app .app-title-row .add-contact-button button {
+    background: #23bdc3;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    /* text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); */
+}
+
+.contact-app .table-root thead tr th {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.contact-app .table-root tbody tr td:last-child {
+    color: #23bdc3;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.MuiMenu-list svg {
+    color: #23bdc3;
+    margin-right: 10px;
+}
+
+.table-switch-column .MuiSwitch-colorSecondary.Mui-checked {
+    color: #23bdc3;
+}
+
+.table-switch-column .MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+    background-color: #23bdc3;
+}
+
+.table-last-column div {
+    float: left;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.contact-modal-root .modal-footer button {
+    background: #23bdc3;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contact-modal-root .form-contents-cs .MuiTextField-root, 
+.contact-modal-root .form-contents-cs .table-switch-column
+{
+    margin-bottom: 20px;
+}
+
+.contact-modal-root .form-contents-cs .MuiFormLabel-root.Mui-focused {
+    color: #23bdc3
+}
+
+.contact-modal-root .form-contents-cs .MuiInput-underline:after {
+    border-bottom: 2px solid #23bdc3;
+}
+
+.add-contact-error {
+    text-align: center;
+    font-size: 12px;
+    color: red;
+}
