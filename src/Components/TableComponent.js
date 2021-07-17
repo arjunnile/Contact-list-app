@@ -13,7 +13,7 @@ import DeleteOutlineOutlinedIcon from "@material-ui/icons/DeleteOutlineOutlined"
 import { Switch } from "@material-ui/core";
 import AddContactModal from "./AddContactModal";
 
-const LastChildComponent = ({ row, onSuccess }) => {
+const LastChildComponent = ({ row, onSuccess, onDelete }) => {
   const [isContactModalOpen, setContactModal] = useState(false);
 
   const onEditContactClick = () => {
@@ -31,7 +31,7 @@ const LastChildComponent = ({ row, onSuccess }) => {
           <EditOutlinedIcon onClick={onEditContactClick} />
         </div>
         <div>
-          <DeleteOutlineOutlinedIcon />
+          <DeleteOutlineOutlinedIcon onClick={() => onDelete(row)} />
         </div>
       </TableCell>
       <AddContactModal
@@ -50,6 +50,7 @@ const TableComponent = ({
   tableHeaderData = [],
   onStatusChange = () => {},
   onSuccess = () => {},
+  onDelete = () => {},
 }) => {
   return (
     <TableContainer component={Paper} className="table-root">
@@ -83,6 +84,7 @@ const TableComponent = ({
               <LastChildComponent
                 row={rowData}
                 onSuccess={(r) => onSuccess(r, "updated_contact")}
+                onDelete={onDelete}
               />
             </TableRow>
           ))}

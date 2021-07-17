@@ -50,6 +50,12 @@ const ContactsMainComponent = () => {
     }
   };
 
+  const onDeleteContact = (row) => {
+    let tableData = tableListData.filter((item) => item.id !== row.id);
+
+    setTableListData(tableData);
+  };
+
   return (
     <div className="contact-app">
       <Header />
@@ -69,6 +75,7 @@ const ContactsMainComponent = () => {
               tableHeaderData={tableHeader}
               onStatusChange={onStatusChange}
               onSuccess={onUpdateContact}
+              onDelete={onDeleteContact}
             />
           </Grid>
         </Grid>
